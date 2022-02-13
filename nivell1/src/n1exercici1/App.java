@@ -1,10 +1,21 @@
 package n1exercici1;
-/*
-Exercici 1. Creu una classe Java que llisti el contingut d'un directori rebut per paràmetre ordenat alfabèticament.
- */
+
+import java.io.File;
+import java.util.Arrays;
+
 public class App {
 
     public static void main(String[] args) {
+
+        File directorio = new File("nivell1");
+
+        String[] directorioContenido = directorio.list();
+
+        Arrays.sort(directorioContenido);
+
+        for(int i = 0; i < directorioContenido.length; i++) {
+            System.out.println(directorioContenido[i]);
+        }
 
     }
 }
