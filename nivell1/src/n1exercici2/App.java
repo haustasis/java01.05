@@ -1,37 +1,33 @@
 package n1exercici2;
-/*
-Exercici 2. Afegeixi a la classe del nivell anterior la funcionalitat de llistar un arbre de directoris
-amb el contingut de tots els seus nivells (recursivamente) de manera que s'imprimeixin en pantalla
-en ordre alfabètic dins de cada nivell, indicant a més si és un directori (D) o un fitxer (F),
-i la seva última data de modificació.
- */
+
 import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
+import java.util.Date;
 
 public class App {
 
     public static void main(String[] args) {
 
         File directorio = new File("nivell1");
+        verDirectorioContenido(directorio);
+    }
 
-        String[] directorioContenido = directorio.list();
-
-        Arrays.sort(directorioContenido);
-
-        for(int i = 0; i < directorioContenido.length; i++) {
-            System.out.println(directorioContenido[i]);
-
-            File directorioArchivos = new File(directorio.getAbsolutePath(), directorioContenido[i]);
-
-            if (directorioArchivos.isDirectory()) {
-                String[] subDirectorio = directorioArchivos.list();
-                Arrays.sort(subDirectorio);
-
-                for(int j = 0; j < subDirectorio.length; j++) {
-                    System.out.println(subDirectorio[j]);
+    public static void verDirectorioContenido(File directorio) {
+        try {
+            File[] archivos = directorio.listFiles();
+            Arrays.sort(archivos);
+            for (File archivo : archivos) {
+                Date lastMod = new Date(archivo.lastModified());
+                if (archivo.isDirectory()) {
+                    System.out.println("(D) " + archivo.getCanonicalPath() + " " + lastMod);
+                    verDirectorioContenido(archivo);
+                } else {
+                    System.out.println("(F) " + archivo.getCanonicalPath() + " " + lastMod);
                 }
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
     }
 }
