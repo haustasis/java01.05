@@ -1,0 +1,13 @@
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\nivell1.iml Sun Feb 13 14:29:47 CET 2022
+(D) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src Sun Feb 13 14:30:04 CET 2022
+(D) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici1 Sun Feb 13 20:13:54 CET 2022
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici1\App.java Sun Feb 13 20:13:54 CET 2022
+(D) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici2 Sun Feb 13 20:54:35 CET 2022
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici2\App.java Sun Feb 13 20:54:35 CET 2022
+(D) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici3 Sun Feb 13 21:27:18 CET 2022
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici3\App.java Sun Feb 13 21:27:18 CET 2022
+(D) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici4 Sun Feb 13 21:31:31 CET 2022
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici4\App.java Sun Feb 13 21:31:31 CET 2022
+(D) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici5 Sun Feb 13 19:04:45 CET 2022
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici5\App.java Sun Feb 13 19:04:45 CET 2022
+(F) C:\Users\MANDRIL\IdeaProjects\java01.05\nivell1\src\n1exercici5\Coche.java Sun Feb 13 19:04:20 CET 2022
